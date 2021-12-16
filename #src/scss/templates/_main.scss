@@ -13,6 +13,9 @@
       margin-top: 40px;
     }
   }
+  &__partners {
+    background-color: #ffc6f7;
+  }
 }
 
 // special block --------------------
@@ -171,5 +174,39 @@
 // ----------------------------------
 
 // partners block --------------------
+
+.partners {
+  &__container {
+  }
+  &__body {
+  }
+  &__label {
+    padding-top: 70px;
+    text-align: center;
+    @media screen and (max-width: 992px) {
+      padding-top: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 20px;
+    }
+  }
+  &__icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    max-width: 245px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
 
 // ----------------------------------

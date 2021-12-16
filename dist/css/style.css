@@ -285,6 +285,13 @@ h1 {
   color: #060d25;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #060d25;
+}
+
 .header__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +374,10 @@ h1 {
   background: url("../../img/pages/heading/background.png") bottom/1225px 500px no-repeat;
 }
 
+.main__partners {
+  background-color: #ffc6f7;
+}
+
 .special {
   text-align: center;
 }
@@ -439,6 +450,33 @@ h1 {
   left: 840px;
 }
 
+.partners__label {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.partners__icons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__icon {
+  max-width: 245px;
+}
+
+.partners__icon img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1169px) {
   .special__iconArrow {
     left: 30px;
@@ -506,6 +544,10 @@ h1 {
     font-size: 40px;
   }
 
+  h3 {
+    font-size: 25px;
+  }
+
   .main__special {
     margin-top: 60px;
   }
@@ -529,6 +571,10 @@ h1 {
   .special__image {
     max-width: 320px;
   }
+
+  .partners__label {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -538,6 +584,10 @@ h1 {
 
   h1 {
     font-size: 30px;
+  }
+
+  h3 {
+    font-size: 23px;
   }
 
   .main__special {
@@ -556,6 +606,10 @@ h1 {
   .special__label {
     margin-bottom: 25px;
   }
+
+  .partners__label {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -565,6 +619,10 @@ h1 {
 
   h1 {
     font-size: 25px;
+  }
+
+  h3 {
+    font-size: 19px;
   }
 
   .main__special {
@@ -596,6 +654,10 @@ h1 {
 
   .special__image {
     max-width: 300px;
+  }
+
+  .partners__label {
+    padding-top: 20px;
   }
 }
 
