@@ -29,6 +29,17 @@
       padding-top: 20px;
     }
   }
+  &__integrate {
+    background-color: #ffc6f7;
+    padding-top: 64px;
+  }
+  &__preview {
+    background-color: #060d26;
+    padding-top: 61px;
+  }
+  &__utility {
+    margin-top: 48px;
+  }
 }
 
 // special block --------------------
@@ -250,6 +261,10 @@
     &:nth-child(odd) {
       margin-right: 24px;
     }
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15);
+    }
   }
 }
 
@@ -302,6 +317,157 @@
 .item-info-third {
 }
 .item-info-fourth {
+}
+
+// ----------------------------------
+
+// integrate block --------------------
+
+.integrate {
+  &__container {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__label {
+    max-width: 603px;
+    margin: 0 auto;
+    margin-bottom: 116px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 86px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 46px;
+      max-width: 400px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 26px;
+    }
+  }
+  &__button {
+    min-height: 33px;
+    margin-bottom: 52px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 26px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 23px;
+    }
+  }
+  &__comment {
+  }
+  &__starts {
+  }
+  &__text {
+    max-width: 361px;
+    margin: 0 auto;
+    margin-top: 7px;
+    padding-bottom: 66px;
+    text-align: center;
+    color: #59617d;
+    font-size: 16px;
+    line-height: 119%;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+// ----------------------------------
+
+// preview block --------------------
+
+.preview {
+  &__container {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__headig {
+    color: $fontWhiteColor;
+    font-size: 48px;
+    line-height: 112.2%;
+    text-align: center;
+    max-width: 596px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+    @media screen and (max-width: 992px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+      max-width: 396px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 25px;
+    }
+  }
+
+  &__image {
+    max-width: 1224px;
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+// ----------------------------------
+
+// utility block --------------------
+
+.utility {
+  &__container {
+  }
+  &__body {
+    display: flex;
+
+    @media screen and (max-width: 1249px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    text-align: center;
+    flex: 0 1 25%;
+    padding: 10px 12px;
+    @media screen and (max-width: 1249px) {
+      flex: 0 1 50%;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 533px) {
+      flex: 0 1 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.item-utility {
+  &__icon {
+    margin-bottom: 16px;
+  }
+  &__label {
+    font-weight: 700;
+    color: $fontBlackColor;
+    margin-bottom: 7px;
+  }
+  &__text {
+    color: $fontBaseColor;
+    line-height: 114%;
+    font-size: 14px;
+    @media screen and (max-width: 1249px) {
+      max-width: 450px;
+      padding: 0px 15px;
+    }
+    @media screen and (max-width: 533px) {
+      max-width: 300px;
+    }
+  }
 }
 
 // ----------------------------------
