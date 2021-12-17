@@ -1,7 +1,7 @@
 .main {
   &__special {
     margin-top: 81px;
-    background: url("../../img/pages/heading/background.png") bottom / 1225px 500px no-repeat;
+    background: url("../img/pages/heading/background.png") bottom / 1225px 500px no-repeat;
 
     @media screen and (max-width: 992px) {
       margin-top: 60px;
@@ -39,6 +39,9 @@
   }
   &__utility {
     margin-top: 48px;
+  }
+  &__features {
+    margin-top: 64px;
   }
 }
 
@@ -471,3 +474,97 @@
 }
 
 // ----------------------------------
+
+// features block --------------------
+
+.features {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1261px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 24px;
+    &:not(:last-child) {
+      margin-right: 24px;
+      @media screen and (max-width: 1261px) {
+        margin-right: 0px;
+        margin-bottom: 24px;
+      }
+    }
+    @media screen and (max-width: 1261px) {
+      flex: 0 1 100%;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+      flex-flow: column nowrap;
+      flex: 0 1 600px;
+    }
+  }
+  &__label {
+    max-width: 472px;
+    flex: 0 1 100%;
+    padding: 32px 32px;
+    font-size: 30px;
+    color: $fontBlackColor;
+    line-height: 120%;
+    & strong {
+      font-weight: 700;
+    }
+    @media screen and (max-width: 1261px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
+  }
+  &__image {
+    @media screen and (max-width: 992px) {
+      max-width: 600px;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+.item-feature-second {
+  background: url("../img/pages/features/backgroundSecond.png") center / 600px 670px no-repeat;
+  @media screen and (max-width: 1261px) {
+    background: url("../img/pages/features/backgroundSecond.png") center / 100% no-repeat;
+  }
+  @media screen and (max-width: 768px) {
+    background: url("../img/pages/features/backgroundSecond.png") center / 600px 670px no-repeat;
+  }
+}
+.item-feature-first {
+  background: url("../img/pages/features/backgroundFirst.png") center / 600px 670px no-repeat;
+  @media screen and (max-width: 1261px) {
+    background: url("../img/pages/features/backgroundFirst.png") center / 100%no-repeat;
+  }
+  & img {
+    margin-bottom: 57px;
+  }
+  @media screen and (max-width: 768px) {
+    background: url("../img/pages/features/backgroundFirst.png") center / 600px 670px no-repeat;
+  }
+}
+
+// ----------------------------------
+
+// pricing block --------------------
