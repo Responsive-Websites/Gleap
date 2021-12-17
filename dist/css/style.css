@@ -405,6 +405,11 @@ h3 {
   margin-top: 125px;
 }
 
+.main__extra {
+  margin-top: 74px;
+  margin-bottom: 70px;
+}
+
 .special {
   text-align: center;
 }
@@ -835,6 +840,33 @@ h3 {
   color: #59617d;
 }
 
+.extra__body {
+  text-align: center;
+}
+
+.extra__label {
+  margin-bottom: 16px;
+}
+
+.extra__text {
+  max-width: 361px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.extra__button {
+  background: #edefff;
+  color: #485bff;
+  font-size: 19px;
+  line-height: 126%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.extra__button:hover {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1265px) {
   .pricing__container {
     max-width: 1225px;
@@ -1034,6 +1066,11 @@ h3 {
     margin-top: 85px;
   }
 
+  .main__extra {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   .special__title {
     margin-bottom: 60px;
   }
@@ -1119,6 +1156,11 @@ h3 {
 
   .main__pricing {
     margin-top: 60px;
+  }
+
+  .main__extra {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .special__title {
@@ -1225,6 +1267,11 @@ h3 {
     margin-top: 30px;
   }
 
+  .main__extra {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .special__subLabel {
     margin-bottom: 20px;
   }
@@ -1278,6 +1325,10 @@ h3 {
 
   .features__label {
     font-size: 18px;
+  }
+
+  .extra__button {
+    width: 100%;
   }
 }
 

@@ -55,6 +55,22 @@
       margin-top: 30px;
     }
   }
+  &__extra {
+    margin-top: 74px;
+    margin-bottom: 70px;
+    @media screen and (max-width: 992px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 // special block --------------------
@@ -713,5 +729,37 @@
 // ----------------------------------
 
 // extra block --------------------
+
+.extra {
+  &__container {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__label {
+    margin-bottom: 16px;
+  }
+  &__text {
+    max-width: 361px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  &__button {
+    background: #edefff;
+    color: #485bff;
+    font-size: 19px;
+    line-height: 126%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+    &:hover {
+      color: $fontWhiteColor;
+    }
+    & span {
+    }
+  }
+}
 
 // ----------------------------------
