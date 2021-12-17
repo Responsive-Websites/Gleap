@@ -74,6 +74,22 @@
   &__teams {
     background-color: #f6f7fb;
   }
+  &__tools {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    @media screen and (max-width: 992px) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 // special block --------------------
@@ -865,5 +881,86 @@
 // ----------------------------------
 
 // tools block --------------------
+
+.tools {
+  &__container {
+    background: url("../../img/pages/tools/toolsback.png") center / 100% no-repeat;
+    @media screen and (max-width: 646px) {
+      background: url("../../img/pages/tools/toolsback.png") center / 0% no-repeat;
+    }
+  }
+  &__body {
+    padding: 242px 0px 122px 0px;
+    text-align: center;
+    @media screen and (max-width: 992px) {
+      padding: 152px 0px 152px 0px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 82px 0px 82px 0px;
+    }
+    @media screen and (max-width: 646px) {
+      padding: 30px 0px 20px 0px;
+    }
+  }
+  &__label {
+    max-width: 498px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    line-height: 117%;
+    color: $fontBlackColor;
+    font-weight: 700;
+    margin-bottom: 17px;
+    @media screen and (max-width: 992px) {
+      font-size: 30px;
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 25px;
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+      max-width: 400px;
+    }
+    @media screen and (max-width: 646px) {
+      background: none;
+      border-radius: 0px;
+      box-shadow: none;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 21px;
+    }
+  }
+  &__text {
+    max-width: 564px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1162px) {
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 25px;
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    @media screen and (max-width: 646px) {
+      background: none;
+      border-radius: 0px;
+      box-shadow: none;
+      max-width: 364px;
+    }
+  }
+  &__button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #edefff;
+    color: #485bff;
+    &:hover {
+      color: #ffffff;
+    }
+    @media screen and (max-width: 456px) {
+      width: 100%;
+    }
+  }
+}
 
 // ----------------------------------
