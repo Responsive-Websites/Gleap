@@ -1,13 +1,13 @@
 .main {
   &__special {
-    margin-top: 81px;
+    margin-top: 161px;
     background: url("../img/pages/heading/background.png") bottom / 1225px 500px no-repeat;
 
     @media screen and (max-width: 992px) {
-      margin-top: 60px;
+      margin-top: 140px;
     }
     @media screen and (max-width: 768px) {
-      margin-top: 50px;
+      margin-top: 120px;
     }
     @media screen and (max-width: 576px) {
       margin-top: 40px;

@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: $fontWhiteColor;
   &__container {
   }
   &__body {
@@ -6,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 0px;
+    min-height: 70px;
   }
   &__map {
     display: flex;
@@ -19,6 +26,9 @@
   }
   &__mavItems {
     display: flex;
+    @media screen and (max-width: 767px) {
+      flex-flow: column nowrap;
+    }
   }
   &__navItem {
     color: #060d25;
@@ -31,6 +41,18 @@
       color: rgb(117, 21, 226);
     }
     transition: 0.5s;
+    @media screen and (max-width: 767px) {
+      color: $fontWhiteColor;
+      font-size: 35px;
+      &:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+      &:hover {
+        color: $fontWhiteColor;
+        text-decoration: underline;
+      }
+    }
   }
   &__link {
     color: inherit;
@@ -52,5 +74,75 @@
     text-align: center;
     font-size: 15px;
     line-height: 127%;
+  }
+  @media screen and (max-width: 767px) {
+    margin-right: 53px;
+  }
+}
+.menu__icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    & span,
+    &::before,
+    &::after {
+      left: 0;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #000000;
+    }
+    &::before,
+    &::after {
+      content: "";
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    & span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
+
+    &._active span {
+      transform: scale(0) translate(0px, -50%);
+    }
+    &._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
+    &._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+
+    background: #485bff;
+    padding: 100px 30px 30px 60px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+
+    &._active {
+      left: 0;
+    }
   }
 }
