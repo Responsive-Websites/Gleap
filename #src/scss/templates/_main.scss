@@ -884,9 +884,9 @@
 
 .tools {
   &__container {
-    background: url("../../img/pages/tools/toolsback.png") center / 100% no-repeat;
+    background: url("../img/pages/tools/toolsback.png") center / 100% no-repeat;
     @media screen and (max-width: 646px) {
-      background: url("../../img/pages/tools/toolsback.png") center / 0% no-repeat;
+      background: url("../img/pages/tools/toolsback.png") center / 0% no-repeat;
     }
   }
   &__body {
