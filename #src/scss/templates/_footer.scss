@@ -1,0 +1,78 @@
+.footer {
+  @media screen and (max-width: 686px) {
+    margin-top: 20px;
+  }
+  &__container {
+  }
+  &__body {
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 42px;
+    @media screen and (max-width: 686px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__image {
+    flex: 0 1 50%;
+  }
+  &__nav {
+    flex: 1 1 50%;
+    @media screen and (max-width: 686px) {
+    }
+  }
+  &__link {
+  }
+  &__copyright {
+    display: flex;
+    padding: 0px 10px;
+    margin-bottom: 42px;
+    color: $fontBaseColor;
+    font-size: 14px;
+    line-height: 136%;
+    & p {
+      padding-right: 12px;
+    }
+    & a {
+      color: $fontBlackColor;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+
+    @media screen and (max-width: 686px) {
+      flex-flow: column nowrap;
+      & a {
+        &:not(:last-child) {
+          margin-right: 0px;
+          margin-bottom: 5px;
+        }
+      }
+      & p {
+        padding-right: 0px;
+        margin-bottom: 15px;
+      }
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.nav-footer {
+  &__list {
+  }
+  &__item {
+    font-size: 15px;
+    line-height: 127%;
+    color: $fontBaseColor;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    & a {
+      color: inherit;
+      transition: 0.5s;
+      &:hover {
+        color: #485bff;
+      }
+    }
+  }
+}
