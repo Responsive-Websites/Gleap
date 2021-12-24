@@ -964,7 +964,7 @@ h3 {
 }
 
 .tools__container {
-  background: url("../../img/pages/tools/toolsback.png") center/100% no-repeat;
+  background: url("../img/pages/tools/toolsback.png") center/100% no-repeat;
 }
 
 .tools__body {
@@ -1668,7 +1668,7 @@ h3 {
 
 @media screen and (max-width: 646px) {
   .tools__container {
-    background: url("../../img/pages/tools/toolsback.png") center/0% no-repeat;
+    background: url("../img/pages/tools/toolsback.png") center/0% no-repeat;
   }
 
   .tools__body {
@@ -1823,7 +1823,7 @@ h3 {
 
 .webp .item-feature-first { background: url(../img/pages/features/backgroundFirst.webp) center/600px 670px no-repeat; }
 
-.webp .tools__container { background: url(../../img/pages/tools/toolsback.webp) center/100% no-repeat; }
+.webp .tools__container { background: url(../img/pages/tools/toolsback.webp) center/100% no-repeat; }
 
 @media screen and (max-width: 1261px) {
 
@@ -1847,5 +1847,5 @@ h3 {
 
 @media screen and (max-width: 646px) {
 
-  .webp .tools__container { background: url(../../img/pages/tools/toolsback.webp) center/0% no-repeat; }
+  .webp .tools__container { background: url(../img/pages/tools/toolsback.webp) center/0% no-repeat; }
 }
